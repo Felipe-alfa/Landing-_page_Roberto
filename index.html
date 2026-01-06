@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Roberto Aquino - Cirurgião-Dentista com mais de 15 anos de experiência. Atendimento humanizado e tecnologia moderna.">
+    <title>Dr. Roberto Aquino - Cirurgião-Dentista</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================================
+         HEADER - Cabeçalho fixo com navegação
+         ======================================== -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#inicio" class="logo">
+                    <div class="logo-icon">Logo</div>
+                    <div class="logo-text">
+                        <h1>Dr. Roberto Aquino</h1>
+                        <p>Cirurgião-Dentista</p>
+                    </div>
+                </a>
+
+                <!-- Navegação Desktop -->
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#biografia" class="nav-link">Biografia</a>
+                    <a href="#curriculo" class="nav-link">Currículo</a>
+                    <a href="#cursos" class="nav-link">Cursos</a>
+                    <a href="#diferenciais" class="nav-link">Por que escolher?</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- Botão CTA Desktop -->
+                <a href="#contato" class="btn btn-primary desktop-only">Agendar Consulta</a>
+
+                <!-- Botão Menu Mobile -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile" id="navMobile">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#biografia" class="nav-link">Biografia</a>
+                <a href="#curriculo" class="nav-link">Currículo</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#diferenciais" class="nav-link">Por que escolher?</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         MAIN - Conteúdo Principal
+         ======================================== -->
+    <main>
+
+        <!-- ========================================
+             HERO - Seção Principal
+             ======================================== -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Coluna Esquerda - Texto -->
+                    <div class="hero-text animate-on-scroll">
+                        <h2 class="hero-title">Sorriso Saudável Começa com Confiança</h2>
+                        <p class="hero-subtitle">Mais de 5 anos cuidando do seu sorriso com excelência, tecnologia moderna e atendimento humanizado.</p>
+                        <div class="hero-buttons">
+                            <a href="#contato" class="btn btn-primary btn-lg">Entre em Contato</a>
+                            <a href="#servicos" class="btn btn-secondary btn-lg">Conheça os Serviços</a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Direita - Imagem -->
+                    <div class="hero-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?w=1080&q=80" alt="Consultório Odontológico Moderno">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SERVIÇOS - Cards de especialidades
+             ======================================== -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Serviços e Especialidades</h2>
+                    <p class="section-subtitle">Oferecemos um atendimento completo e personalizado para todas as suas necessidades odontológicas</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card animate-on-scroll" style="--delay: 0s">
+                        <div class="service-icon service-icon-blue">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Estética Dental</h3>
+                        <p>Transforme seu sorriso com lentes de contato, facetas e clareamento dental profissional.</p>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card animate-on-scroll" style="--delay: 0.1s">
+                        <div class="service-icon service-icon-rose">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Implantes Dentários</h3>
+                        <p>Soluções completas em implantodontia com tecnologia de ponta e resultados naturais.</p>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="service-card animate-on-scroll" style="--delay: 0.2s">
+                        <div class="service-icon service-icon-emerald">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h3>Ortodontia</h3>
+                        <p>Aparelhos fixos, móveis e alinhadores invisíveis para todas as idades.</p>
+                    </div>
+
+                    <!-- Serviço 4 -->
+                    <div class="service-card animate-on-scroll" style="--delay: 0.3s">
+                        <div class="service-icon service-icon-amber">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Clínica Geral</h3>
+                        <p>Prevenção, limpeza, restaurações e tratamentos de canal com excelência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             BIOGRAFIA - Sobre o dentista
+             ======================================== -->
+        <section id="biografia" class="biography">
+            <div class="container">
+                <div class="biography-grid">
+                    <!-- Coluna Esquerda - Imagem -->
+                    <div class="biography-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?w=1080&q=80" alt="Dr. Roberto Aquino">
+                    </div>
+
+                    <!-- Coluna Direita - Texto -->
+                    <div class="biography-text animate-on-scroll">
+                        <h2 class="section-title">Conheça o Dr. Roberto Aquino</h2>
+                        <p class="subtitle-accent">Cirurgião-Dentista</p>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero voluptas, sed laboriosam perferendis possimus ipsam neque harum repellendus molestiae, fuga in, tempore fugiat eaque rem repudiandae cumque earum voluptatum ea?.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo dolorum fuga minus quis dolore, quia laudantium illo vero ipsum temporibus quidem veritatis a laboriosam, cupiditate distinctio odio? Veritatis, natus?.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam tenetur similique alias quaerat asperiores exercitationem facilis tempora assumenda doloremque, sint dolorem doloribus reprehenderit repellat pariatur commodi, porro beatae voluptatibus?.</p>
+
+                        <div class="values-list">
+                            <h3>Meus Valores:</h3>
+                            <div class="value-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Ética e transparência em todos os procedimentos</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Atendimento humanizado e acolhedor</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Tecnologia moderna a serviço da saúde</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Compromisso com resultados duradouros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CURRÍCULO - Timeline profissional
+             ======================================== -->
+        <section id="curriculo" class="resume">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Trajetória Profissional</h2>
+                    <p class="section-subtitle">Uma carreira dedicada ao cuidado e à excelência em odontologia</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item animate-on-scroll" style="--delay: 0s">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025 - Atual</span>
+                            </div>
+                            <h3>Clínica Própria</h3>
+                            <p class="timeline-institution">Consultório </p>
+                            <p>Atendimento personalizado em todas as especialidades odontológicas com foco em excelência e humanização.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item animate-on-scroll" style="--delay: 0.1s">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025 - 2025</span>
+                            </div>
+                            <h3>Especialista em Implantodontia</h3>
+                            <p class="timeline-institution">Clínica Odontológica </p>
+                            <p>Responsável por casos complexos de implantes dentários e reabilitação oral completa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item animate-on-scroll" style="--delay: 0.2s">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025 - 2025</span>
+                            </div>
+                            <h3>Dentista Clínico Geral</h3>
+                            <p class="timeline-institution">Centro Médico Saúde Total</p>
+                            <p>Atendimento em clínica geral, endodontia e estética dental para pacientes de todas as idades.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item animate-on-scroll" style="--delay: 0.3s">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025 - 2025</span>
+                            </div>
+                            <h3>Cirurgião-Dentista</h3>
+                            <p class="timeline-institution">Múltiplas Clínicas</p>
+                            <p>Início da carreira profissional com foco em formação prática e atendimento de qualidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item animate-on-scroll" style="--delay: 0.4s">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025</span>
+                            </div>
+                            <h3>Graduação em Odontologia</h3>
+                            <p class="timeline-institution">Universidade</p>
+                            <p>Formação sólida em Odontologia com ênfase em clínica geral e especialidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CURSOS - Especializações
+             ======================================== -->
+        <section id="cursos" class="courses">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Cursos e Especializações</h2>
+                    <p class="section-subtitle">Educação continuada para oferecer sempre o melhor atendimento</p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Curso 1 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-purple">Especialização</span>
+                        <h3>Especialização em Implantodontia</h3>
+                        <p>Associação Brasileira de Odontologia</p>
+                    </div>
+
+                    <!-- Curso 2 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0.1s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-blue">Pós-Graduação</span>
+                        <h3>Pós-Graduação em Estética Dental</h3>
+                        <p>Instituto</p>
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0.2s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-green">Curso</span>
+                        <h3>Curso Avançado de Harmonização Orofacial</h3>
+                        <p>Academia Internacional de Estética</p>
+                    </div>
+
+                    <!-- Curso 4 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0.3s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-amber">Certificação</span>
+                        <h3>Certificação em Lentes de Contato Dental</h3>
+                        <p>Centro de Estudos Odontológicos</p>
+                    </div>
+
+                    <!-- Curso 5 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0.4s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-green">Curso</span>
+                        <h3>Curso de Cirurgia Guiada por Computador</h3>
+                        <p>Instituto Brasileiro de Implantodontia</p>
+                    </div>
+
+                    <!-- Curso 6 -->
+                    <div class="course-card animate-on-scroll" style="--delay: 0.5s">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="course-year">2025</span>
+                        </div>
+                        <span class="course-badge badge-rose">Atualização</span>
+                        <h3>Atualização em Prótese sobre Implantes</h3>
+                        <p>Congresso Internacional de Odontologia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             DIFERENCIAIS - Por que escolher
+             ======================================== -->
+        <section id="diferenciais" class="why-choose">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Por Que Escolher Dr. Roberto Aquino?</h2>
+                    <p class="section-subtitle">Diferenciais que fazem toda a diferença no seu tratamento</p>
+                </div>
+
+                <div class="differentials-grid">
+                    <!-- Diferencial 1 -->
+                    <div class="differential-card animate-on-scroll" style="--delay: 0s">
+                        <div class="differential-icon differential-icon-rose">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Atendimento Humanizado</h3>
+                        <p>Cada paciente é único e recebe cuidado personalizado com empatia e atenção aos detalhes.</p>
+                    </div>
+
+                    <!-- Diferencial 2 -->
+                    <div class="differential-card animate-on-scroll" style="--delay: 0.1s">
+                        <div class="differential-icon differential-icon-amber">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Tecnologia Moderna</h3>
+                        <p>Equipamentos de última geração para diagnósticos precisos e procedimentos mais confortáveis.</p>
+                    </div>
+
+                    <!-- Diferencial 3 -->
+                    <div class="differential-card animate-on-scroll" style="--delay: 0.2s">
+                        <div class="differential-icon differential-icon-blue">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Experiência Comprovada</h3>
+                        <p>Mais de 5 anos de experiência e milhares de sorrisos transformados com excelência.</p>
+                    </div>
+
+                    <!-- Diferencial 4 -->
+                    <div class="differential-card animate-on-scroll" style="--delay: 0.3s">
+                        <div class="differential-icon differential-icon-emerald">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Ética e Confiança</h3>
+                        <p>Transparência total em diagnósticos e tratamentos, sempre respeitando suas necessidades.</p>
+                    </div>
+                </div>
+
+                <!-- Estatísticas -->
+                <div class="stats-grid animate-on-scroll">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Pacientes Atendidos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Especializações</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfação</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTATO - Informações de contato
+             ======================================== -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Agende sua consulta e dê o primeiro passo para o sorriso dos seus sonhos</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Coluna Esquerda - Cards de Contato -->
+                    <div class="contact-cards">
+                        <!-- Telefone -->
+                        <a href="tel:+5511999999999" class="contact-card animate-on-scroll" style="--delay: 0s">
+                            <div class="contact-icon contact-icon-blue">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>(11) 11 98507-6745</p>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/11985076745" target="_blank" class="contact-card contact-card-whatsapp animate-on-scroll" style="--delay: 0.1s">
+                            <div class="contact-icon contact-icon-green">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>(11) 11 98507-6745</p>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:contato@robertoaquino.com.br" class="contact-card animate-on-scroll" style="--delay: 0.2s">
+                            <div class="contact-icon contact-icon-purple">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>E-mail</h3>
+                                <p>contato@robertoaquino.com.br</p>
+                            </div>
+                        </a>
+
+                        <!-- Endereço -->
+                        <div class="contact-card animate-on-scroll" style="--delay: 0.3s">
+                            <div class="contact-icon contact-icon-rose">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>Rua Embiruçu, 678 - Vila matilde</p>
+                                <p>São Paulo - SP</p>
+                            </div>
+                        </div>
+
+                        <!-- Horário -->
+                        <div class="contact-card animate-on-scroll" style="--delay: 0.4s">
+                            <div class="contact-icon contact-icon-amber">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Horário de Atendimento</h3>
+                                <p>Seg a Sex: 8h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Direita - Imagem e Redes Sociais -->
+                    <div class="contact-sidebar">
+                        <!-- Imagem -->
+                        <div class="contact-image animate-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1630208566639-fed27bf29fa4?w=1080&q=80" alt="Consultório">
+                        </div>
+
+                        <!-- Redes Sociais -->
+                        <div class="social-box animate-on-scroll">
+                            <h3>Siga nas Redes Sociais</h3>
+                            <p>Acompanhe dicas de saúde bucal e novidades do consultório</p>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/dr.roberto_aqs/" target="_blank" class="social-btn">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                                <a href="https://facebook.com/drrobertoaquino" target="_blank" class="social-btn">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                                <a href="https://linkedin.com/in/robertoaquino" target="_blank" class="social-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         ASIDE - Botão WhatsApp Flutuante
+         ======================================== -->
+    <aside>
+        <a href="https://wa.me/11985076745?text=Olá! Gostaria de agendar uma consulta." 
+           target="_blank" 
+           class="floating-whatsapp" 
+           id="floatingWhatsapp"
+           aria-label="Contato via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Fale no WhatsApp</span>
+        </a>
+    </aside>
+
+    <!-- ========================================
+         FOOTER - Rodapé
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1 - Sobre -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">Logo</div>
+                        <div>
+                            <h3>Dr. Roberto Aquino</h3>
+                            <p>Cirurgião-Dentista</p>
+                        </div>
+                    </div>
+                    <p>Cuidando do seu sorriso com excelência, tecnologia e humanização há mais de 5 anos.</p>
+                    <p class="footer-cro">CRO-SP 12345</p>
+                </div>
+
+                <!-- Coluna 2 - Links Rápidos -->
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#biografia">Biografia</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 - Redes Sociais -->
+                <div class="footer-column">
+                    <h3>Redes Sociais</h3>
+                    <p>Siga-nos nas redes sociais para dicas e novidades</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/dr.roberto_aqs/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/drrobertoaquino" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/robertoaquino" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> <a href="https://wa.me/11966114346?">Felipe Guilherme</a>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/script.js"></script>
+
+</body>
+</html>
